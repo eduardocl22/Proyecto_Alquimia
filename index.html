@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú de Hamburguesa</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    
+
+    <div class="navbar">
+        <ul id="nav">
+          <button id="Cerrar"><img src="X.png" alt="X"></button>
+          <li><a href="#">INICIO</a></li>
+          <li><a href="acerca.html">ACERCA DE NOSOTROS</a></li>
+          <li><a href="reserva2.html">MENÚ</a></li>
+          <li><a href="reserva.html">RESERVA</a></li>
+          <li><a href="galeria.html">GALERIA</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li ><img id="adorno" src="adorno.png" alt=""></li>
+          <li><div id="copy">©2023 udi.dossier</div></li>
+   
+        </ul>
+      </div>     
+  </div>
+ 
+  <div class="avisos">
+    <div class="navbar2">
+      <button id="abrir"><img src="abrir.png" alt="X"></button>
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com"><img src="fb.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com"><img src="ig.png" alt="Instagram"></a>
+        <a href="https://www.whatsapp.com"><img src="ws.png" alt="WhatsApp"></a>
+    </div>
+  </div>
+  
+  <div class="table-container">
+    <table class="table">
+      <tr>
+        <td id="c-1">Bienvenido a RESTAURANTE ESCUELA <div id="esp-1">by dossier</div></td>
+        <td id="c-2">El primer Restaurante Escuela en <div id="esp-2">BOLIVIA</div></td>
+        <td id="c-3">Visita un espacio gastronomico de <div id="esp-3"> muy alto nivel</div></td>
+        <td id="c-4">
+          <div id="Col-btn">
+            <button> RESERVA</button>
+            <button> VER MENÚ</button>
+            
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const td1 = document.querySelector('#c-1');
+      const td2 = document.querySelector('#c-2');
+      const td3 = document.querySelector('#c-3');
+      const td4 = document.querySelector('#c-4');
+      td1.addEventListener('mouseover', () => {
+        document.body.style.backgroundImage = "url('bg.png')";
+      });
+      td2.addEventListener('mouseover', () => {
+        document.body.style.backgroundImage = "url('bg2.png')";
+      });
+
+
+      td3.addEventListener('mouseover', () => {
+        document.body.style.backgroundImage = "url('bg3.png')";
+      });
+
+      td4.addEventListener('mouseover', () => {
+        document.body.style.backgroundImage = "url('bg4.png')";
+      });
+
+     
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
